@@ -9,6 +9,9 @@ class Estudios(models.Model):
     fecha_inicio = models.DateTimeField()
     fecha_fin = models.DateTimeField(null=True)
     titulo = models.CharField(max_length=120)
+    
+    class Meta:
+        verbose_name = "Estudio"
 
     def __str__(self):
         """Return company and first_name and last_name."""

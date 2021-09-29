@@ -8,7 +8,6 @@ from django.contrib import admin
 
 # Models
 from users.models import User
-from experiencia.models import Experiencia
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):

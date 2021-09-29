@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'experiencia',
     'portafolio',
     'estudios',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
