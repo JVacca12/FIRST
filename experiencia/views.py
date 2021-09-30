@@ -13,7 +13,9 @@ from users.permissions import IsStandardUser
 from experiencia.serializers import (ExperienciaModelSerializer, ExperienciaSerializer)
 
 
-class ExperienceViewSet(mixins.ListModelMixin,
+class ExperienceViewSet(mixins.UpdateModelMixin,
+                        mixins.DestroyModelMixin,
+                        mixins.ListModelMixin,
                         mixins.CreateModelMixin,
                         viewsets.GenericViewSet):
 
