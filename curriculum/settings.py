@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'portafolio',
     'estudios',
     'rest_framework.authtoken',
+    'search',
 ]
 
 MIDDLEWARE = [

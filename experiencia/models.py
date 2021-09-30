@@ -4,7 +4,7 @@ from users.models import User
 # Create your models here.
 class Experiencia(models.Model):
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='experiencia')
     cargo = models.CharField(max_length=120)
     fecha_inicio = models.DateTimeField()
     fecha_fin = models.DateTimeField(null=True)
